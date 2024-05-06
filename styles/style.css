@@ -40,15 +40,29 @@ ol {
 .content {
   display: flex;
   gap: 30px;
+  justify-content: center;
+  align-items:center;
+  /* inline-size: 1140px; */
 }
 
+
+
 .content__details {
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-items: flex-end;
+  gap: 26px;
+  block-size: 534px;
+
 }
+
 
 .search-form {
   display: flex;
   justify-content: space-evenly;
+}
+
+.title {
+  padding-top: 133px;
 }
