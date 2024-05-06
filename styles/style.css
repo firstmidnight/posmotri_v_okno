@@ -9,14 +9,16 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
+
 
 h1,
 h2,
@@ -39,30 +41,27 @@ ol {
 
 .content {
   display: flex;
-  gap: 30px;
   justify-content: center;
-  align-items:center;
-  /* inline-size: 1140px; */
+  align-items: center;
+  gap: 30px;
+  align-self: center;
+  block-size: 534px;
+  min-inline-size: 1140px;
 }
-
-
 
 .content__details {
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-items: flex-end;
   gap: 26px;
-  block-size: 534px;
-
+  padding-top: 5px;
+  block-size: 100%;
 }
 
+.content__list {
+  overflow-y: scroll;
+}
 
 .search-form {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.title {
-  padding-top: 133px;
+  justify-content: flex-start;
 }
