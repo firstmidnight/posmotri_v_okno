@@ -16,11 +16,10 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-
 
 h1,
 h2,
@@ -62,6 +61,7 @@ ol {
 
 .content__list {
   overflow-y: scroll;
+  position: relative;
 }
 
 .search-form {
@@ -72,7 +72,9 @@ ol {
 .result__video-container {
   min-width: 711px;
   min-height: 386px;
-  }
+  margin-bottom: 16px;
+  position: relative;
+}
 
 .result__video {
   object-fit: cover;
@@ -82,5 +84,18 @@ ol {
 
 .content__list-item:not(:first-child):not(:last-child) {
   margin-top: 30px;
+}
 
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+width: 194px;
+height: 103px;
+}
+
+.content__video-card-description-container {
+  flex: 1;
 }
