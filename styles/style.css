@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-  display: flex;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -44,7 +43,6 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  align-self: center;
   block-size: 534px;
   min-inline-size: 1140px;
 }
@@ -52,6 +50,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 26px;
   padding-top: 5px;
   block-size: 100%;
