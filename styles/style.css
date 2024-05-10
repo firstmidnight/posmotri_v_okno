@@ -55,9 +55,9 @@ ol {
   flex-direction: column;
   justify-content: flex-end;
   gap: 26px;
-  padding-top: 5px;
   block-size: 100%;
   inline-size: 100%;
+  
 }
 
 .content__list {
@@ -65,6 +65,7 @@ ol {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+
 }
 
 .search-form {
@@ -85,8 +86,7 @@ ol {
   object-fit: cover;
 }
 
-.content__list-item:not(:first-child):not(:last-child) {
-  margin-top: 30px;
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -102,10 +102,12 @@ ol {
   height: 103px;
   background-size: cover;
   background-position: center;
+  margin-right: 30px;
 }
 
 .content__video-card-description-container {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  inline-size: 100%;
 }
 
 .search-form__fieldset-title {
@@ -183,7 +185,6 @@ button {
   text-align: center;
   background-color: #1b1919;
   cursor: pointer;
-  box-sizing: inherit;
 }
 
 .search-form__submit-button {
@@ -195,7 +196,7 @@ button {
 .more-button {
   width: 399px;
   height: 34px;
-  align-self: flex-end;
+  margin-bottom: 44px;
 }
 
 .search-form__textfield {
