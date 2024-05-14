@@ -71,14 +71,14 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   margin-bottom: 16px;
 }
 
 .result__video {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
 }
 
@@ -94,8 +94,8 @@ ol {
 .content__video-card-thumbnail {
   display: flex;
   flex-direction: column;
-  min-width: 194px;
-  height: 103px;
+  min-inline-size: 194px;
+  block-size: 103px;
   padding: 2px;
   background-position: center;
   background-size: cover;
@@ -179,8 +179,6 @@ fieldset {
   border: none;
 }
 
-
-
 button {
   border: 1px solid #fff;
   color: #fff;
@@ -196,19 +194,19 @@ button {
 
 .search-form__submit-button {
   align-self: flex-end;
-  width: 194px;
-  height: 34px;
+  inline-size: 194px;
+  block-size: 34px;
 }
 
 .more-button {
-  width: 399px;
-  height: 34px;
+  inline-size: 399px;
+  block-size: 34px;
   margin-bottom: 39px;
 }
 
 .search-form__textfield {
-  width: 225px;
-  height: 27px;
+  inline-size: 225px;
+  block-size: 27px;
   border-top: 1px solid #fff;
   border-right: none;
   border-bottom: 1px solid #fff;
@@ -225,11 +223,11 @@ button {
 
 .search-form__pseudo-checkbox {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  inline-size: 22px;
+  block-size: 22px;
   border: solid 1px #fff;
   background-color: inherit;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -237,21 +235,20 @@ button {
   outline-offset: -1px;
 }
 
+.search-form__pseudo-checkbox:hover + span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 input[type='checkbox']:checked + span {
-  width: 22px;
-  height: 22px;
+  inline-size: 22px;
+  block-size: 22px;
   border: double 3px #000;
   background-color: #fff;
 }
 
 .content__card-link_current {
   background-color: #545050;
-}
-
-
-.search-form__pseudo-checkbox:hover + span {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .content__card-link:active {
@@ -267,8 +264,6 @@ input[type='checkbox']:checked + span {
   outline: 1px solid #fff;
   outline-offset: 5px;
 }
-
-
 
 button:hover {
   text-decoration: underline;
