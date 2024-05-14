@@ -248,6 +248,12 @@ input[type='checkbox']:checked + span {
   background-color: #545050;
 }
 
+
+.search-form__pseudo-checkbox:hover + span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .content__card-link:active {
   background-color: #545050;
 }
@@ -262,11 +268,7 @@ input[type='checkbox']:checked + span {
   outline-offset: 5px;
 }
 
-.search-form__label-text:hover {
-  box-sizing: border-box;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
+
 
 button:hover {
   text-decoration: underline;
