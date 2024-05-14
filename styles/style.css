@@ -53,7 +53,6 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* gap: 26px; */
   block-size: 100%;
   inline-size: 100%;
 }
@@ -119,7 +118,14 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  padding-bottom: 5px;
+}
+
+.search-form__label {
+  display: inline-block;
+  width: fit-content;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .title {
@@ -173,12 +179,7 @@ fieldset {
   border: none;
 }
 
-.search-form__label {
-  display: inline-block;
-  width: fit-content;
-  padding-top: 5px;
-  cursor: pointer;
-}
+
 
 button {
   border: 1px solid #fff;
@@ -202,7 +203,7 @@ button {
 .more-button {
   width: 399px;
   height: 34px;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 }
 
 .search-form__textfield {
@@ -228,6 +229,7 @@ button {
   height: 22px;
   border: solid 1px #fff;
   background-color: inherit;
+  vertical-align: middle
 }
 
 .search-form__label:has(:focus-visible) {
